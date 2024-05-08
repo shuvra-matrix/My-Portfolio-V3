@@ -1,0 +1,63 @@
+.nav {
+  background-color: #050815;
+  padding: 18px 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.about-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.github {
+  border: 2px solid #494380;
+  padding: 5px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.github p {
+  color: #494380;
+}

@@ -2,13 +2,21 @@ import React from "react";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-const Computers = ({ isMobile }) => {
+const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
-      <pointLight intensity={4} />
+      <pointLight intensity={2} />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.2}
+        penumbra={2}
+        intensity={2}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <primitive
         object={computer.scene}
         scale={0.75}
@@ -19,7 +27,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = ({ isMobile }) => {
+const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop="demand"

@@ -1,6 +1,5 @@
 .nav {
-  background-color: #050815;
-  padding: 18px 12px;
+  background: transparent;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -8,6 +7,8 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  margin-top: 15px;
+  transition: 0.4s ease-in-out;
 }
 
 .nav-container {
@@ -17,6 +18,14 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 12px;
+}
+
+.scrolled-nav {
+  backdrop-filter: blur(40px);
+  border-radius: 15px;
+  border: 2px solid #080a1ae8;
+  box-shadow: 0 0 20px 10px #050714;
 }
 
 .logo-div {

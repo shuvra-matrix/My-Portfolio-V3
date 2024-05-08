@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import heroBgImg from "../../assets/herobg.png";
 import { ComputersCanvas } from "../canvas/index.js";
+import StyledStarsCanvas from "../canvas/BgStarts.jsx";
 
 const Hero = () => {
   return (
     <section className={styles["hero-container"]}>
-      <img src={heroBgImg} alt="herobg" />
+      <StyledStarsCanvas />
       <div className={styles["hero-container-main"]}>
         <div className={styles["hero-container-sub-one"]}>
           <div className={styles["sub-one-design"]}>
@@ -27,6 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       <ComputersCanvas />
     </section>
   );

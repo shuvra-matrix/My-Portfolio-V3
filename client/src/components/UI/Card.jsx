@@ -8,6 +8,7 @@ const Card = ({
   title = "INTRODUCTION",
   overview = "Overview.",
   bgColor = "#050815",
+  id = "about",
 }) => {
   return (
     <motion.section
@@ -17,7 +18,7 @@ const Card = ({
       viewport={{ once: true, amount: 0.25 }}
       className={styles["card-main"]}
       style={{ backgroundColor: bgColor }}
-      id="about"
+      id={id}
     >
       <div className={styles["card-sub"]}>
         <motion.div variants={textVariant()} className={styles["card-heading"]}>

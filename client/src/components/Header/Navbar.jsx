@@ -56,7 +56,9 @@ const Navbar = () => {
         </div>
         <div className={styles["event-section"]}>
           <div className={styles["github"]} onClick={githubIconClickHandler}>
-            <p>Github Profile</p>
+            <div>
+              <p>Github Profile</p>
+            </div>
           </div>
           <div className={styles["event-img"]}>
             <img

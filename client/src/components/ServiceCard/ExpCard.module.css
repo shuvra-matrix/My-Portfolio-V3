@@ -30,6 +30,7 @@
   background-color: #161134;
   padding: 10px;
   border-radius: 5px;
+  border: 2px solid #0a2b5145;
 }
 
 .company-details h1 {
@@ -93,7 +94,7 @@
   height: 100px;
   border-radius: 8px;
   filter: brightness(80%);
-  border: 2px solid #1a1531;
+  border: 2px solid rgba(8, 44, 91, 0.48);
 }
 
 .certiimage img:hover {

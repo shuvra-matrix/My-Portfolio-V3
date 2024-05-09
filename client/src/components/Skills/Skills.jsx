@@ -12,6 +12,7 @@ const Skills = () => {
       title={"WHAT I HAVE LEARNED SO FAR"}
       overview={"Skills."}
       bgColor={"transparent"}
+      id={"skills"}
     >
       <motion.p
         className={styles["skills-me-long"]}

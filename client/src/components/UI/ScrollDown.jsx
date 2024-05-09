@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ScrollDown = () => {
   return (
     <div className={styles["scroll-components"]}>
-      <a href="#about">
+      <a href={"#about"}>
         <div className={styles["scroll-sub-components"]}>
           <motion.div
             animate={{ y: [0, 25, 0] }}

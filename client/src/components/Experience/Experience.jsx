@@ -8,7 +8,11 @@ import Card from "../UI/Card.jsx";
 
 const Experience = () => {
   return (
-    <Card title={"WHAT I HAVE DONE SO FAR"} overview={"Work Experience."}>
+    <Card
+      title={"WHAT I HAVE DONE SO FAR"}
+      overview={"Work Experience."}
+      id={"exp"}
+    >
       <div className={styles["exp-section"]}>
         <VerticalTimeline>
           {experiences.map((data, index) => (

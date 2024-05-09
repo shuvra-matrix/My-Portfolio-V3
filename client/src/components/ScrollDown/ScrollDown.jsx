@@ -7,7 +7,7 @@ const ScrollDown = () => {
       <a href="#about">
         <div className={styles["scroll-sub-components"]}>
           <motion.div
-            animate={{ y: [0, 30, 0] }}
+            animate={{ y: [0, 25, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
             className={styles["scroll-dot"]}
           ></motion.div>

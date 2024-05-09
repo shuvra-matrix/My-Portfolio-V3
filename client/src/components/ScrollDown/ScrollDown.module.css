@@ -21,3 +21,34 @@
   border-radius: 50%;
   margin-top: 6px;
 }
+
+@media (max-width: 750px) {
+  .scroll-components {
+    bottom: 25px;
+  }
+
+  .scroll-sub-components {
+    width: 30px;
+    height: 50px;
+    border: 3px solid #a9a9a9;
+    border-radius: 18px;
+  }
+  .scroll-dot {
+    width: 8px;
+    height: 8px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 550px) {
+  .scroll-sub-components {
+    width: 30px;
+    height: 45px;
+    border: 3px solid #a9a9a9;
+    border-radius: 18px;
+  }
+  .scroll-dot {
+    width: 8px;
+    height: 8px;
+  }
+}

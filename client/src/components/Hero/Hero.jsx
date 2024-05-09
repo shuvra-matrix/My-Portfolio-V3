@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { ComputersCanvas } from "../canvas/index.js";
-import StyledStarsCanvas from "../canvas/BgStarts.jsx";
 import ScrollDown from "../ScrollDown/ScrollDown.jsx";
 
 const Hero = () => {
   return (
     <section className={styles["hero-container"]}>
-      <StyledStarsCanvas />
+      {/*<StyledStarsCanvas />*/}
       <div className={styles["hero-container-main"]}>
         <div className={styles["hero-container-sub-one"]}>
           <div className={styles["sub-one-design"]}>
@@ -28,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <ComputersCanvas />
+      {/*<ComputersCanvas />*/}
       <ScrollDown />
     </section>
   );

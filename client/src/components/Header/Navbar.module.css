@@ -64,12 +64,28 @@
 }
 
 .github {
-  border: 2px solid #494380;
   padding: 5px 10px;
-  border-radius: 14px;
+  border-radius: 1px;
   cursor: pointer;
+  background-color: #3e187a;
+  background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+  color: transparent;
+  border: 2px solid transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+  border-image-slice: 1;
+}
+
+.github:hover {
+  border-image: linear-gradient(316deg, #36136c 0%, #8c39c7 74%);
+  border-image-slice: 1;
+  background-image: linear-gradient(316deg, #36136c 0%, #8c39c7 74%);
 }
 
 .github p {
-  color: #494380;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 500;
 }

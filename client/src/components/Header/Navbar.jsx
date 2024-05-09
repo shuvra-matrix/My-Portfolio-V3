@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     window.onscroll = () => {
-      setIsScrolled(window.pageYOffset !== 0);
+      setIsScrolled(window.scrollY !== 0);
       return () => (window.onscroll = null);
     };
   }, []);

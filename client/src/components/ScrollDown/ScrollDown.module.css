@@ -1,0 +1,23 @@
+.scroll-components {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-sub-components {
+  width: 35px;
+  height: 64px;
+  border: 4px solid #a9a9a9;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+}
+.scroll-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #a9a9a9;
+  border-radius: 50%;
+  margin-top: 6px;
+}

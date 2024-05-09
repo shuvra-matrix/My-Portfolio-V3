@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { ComputersCanvas } from "../canvas/index.js";
 import StyledStarsCanvas from "../canvas/BgStarts.jsx";
+import ScrollDown from "../ScrollDown/ScrollDown.jsx";
 
 const Hero = () => {
   return (
@@ -27,8 +28,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <ComputersCanvas />
+      <ScrollDown />
     </section>
   );
 };

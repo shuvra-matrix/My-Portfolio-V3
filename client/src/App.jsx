@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./pages/Root.jsx";
+import { lazy } from "react";
+
+const Root = lazy(() => import("./pages/Root.jsx"));
 
 const router = createBrowserRouter([
   {

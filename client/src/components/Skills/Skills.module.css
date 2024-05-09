@@ -1,0 +1,50 @@
+.skills-main {
+  width: 100%;
+  background-color: #050815;
+  padding-block: 10px;
+}
+.skills-sub {
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 12px;
+  margin: auto;
+}
+
+.skills-h2 {
+  font-size: 50px;
+  padding-block: 10px;
+}
+
+.skills-me-long {
+  color: #c5c5c5;
+  line-height: 25px;
+  font-size: 15px;
+}
+.skill-card {
+  padding: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .skill-card {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  .skill-card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .skill-card {
+    gap: 30px;
+  }
+}

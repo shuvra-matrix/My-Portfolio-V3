@@ -31,9 +31,9 @@ const Navbar = () => {
           <a href={"#about"}>
             <p>About</p>
           </a>
-          <NavLink to={"#about"}>
+          <a href={"#skills"}>
             <p>Skill</p>
-          </NavLink>
+          </a>
           <NavLink to={"#about"}>
             <p>Experience</p>
           </NavLink>

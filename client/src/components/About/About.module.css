@@ -1,0 +1,55 @@
+.about-main {
+  width: 100%;
+  background-color: #050815;
+  padding-block: 10px;
+}
+.about-sub {
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 12px;
+  margin: auto;
+}
+
+.intro-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #c5c5c5;
+}
+
+.about-h2 {
+  font-size: 50px;
+  padding-block: 10px;
+}
+.about-me-long {
+  color: #c5c5c5;
+  line-height: 25px;
+  font-size: 15px;
+}
+.service-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  gap: 50px;
+  padding: 30px;
+}
+
+@media (max-width: 700px) {
+  .service-card {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-h2 {
+    font-size: 45px;
+    padding-block: 10px;
+  }
+
+  .service-card {
+    gap: 20px;
+    flex-flow: column nowrap;
+  }
+}

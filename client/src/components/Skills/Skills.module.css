@@ -9,7 +9,12 @@
   padding-inline: 12px;
   margin: auto;
 }
-
+.intro-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #c5c5c5;
+}
 .skills-h2 {
   font-size: 50px;
   padding-block: 10px;

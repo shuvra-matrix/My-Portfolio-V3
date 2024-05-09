@@ -1,0 +1,108 @@
+.company-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.company-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.details-section {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.company-details {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.company-details img {
+  width: 65px;
+  height: 45px;
+  background-color: #161134;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.company-details h1 {
+  font-size: 18px;
+  color: #d2d2d2;
+}
+.company-details h4 {
+  font-size: 15px;
+  color: #989898;
+  font-weight: 500;
+}
+
+.company-details h5 {
+  font-size: 12px;
+  color: #989898;
+  font-weight: 400;
+}
+
+.desc {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.desc li {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #dcdcdc;
+}
+
+.skills-main {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  padding-block: 20px;
+}
+
+.skills-main p {
+  margin-top: 0 !important;
+  color: #d5d5d5;
+}
+
+.skills ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 8px;
+  color: #d5d5d5;
+}
+
+.skills li {
+  font-size: 14px;
+}
+
+.certiimage {
+  text-decoration: none;
+}
+
+.certiimage img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  filter: brightness(80%);
+  border: 2px solid #1a1531;
+}
+
+.certiimage img:hover {
+  filter: brightness(70%);
+}
+
+@media (max-width: 1200px) {
+  .company-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+}

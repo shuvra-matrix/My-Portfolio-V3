@@ -22,6 +22,10 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   };
 
+  const githubIconClickHandler = () => {
+    window.open("https://github.com/shuvra-matrix", "_blank");
+  };
+
   return (
     <nav className={styles["nav"]}>
       <div
@@ -40,9 +44,9 @@ const Navbar = () => {
           <a href={"#skills"}>
             <p>Skill</p>
           </a>
-          <NavLink to={"#about"}>
+          <a href={"#exp"}>
             <p>Experience</p>
-          </NavLink>
+          </a>
           <NavLink to={"#about"}>
             <p>Projects</p>
           </NavLink>
@@ -51,11 +55,12 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className={styles["event-section"]}>
-          <div className={styles["github"]}>
+          <div className={styles["github"]} onClick={githubIconClickHandler}>
             <p>Github Profile</p>
           </div>
           <div className={styles["event-img"]}>
             <img
+              onClick={githubIconClickHandler}
               className={styles["git-icon"]}
               src={githubIcon}
               alt="github img"

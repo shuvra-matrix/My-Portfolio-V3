@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import tcsIon from "./tcsion.png";
+import internshipone from "./internship1.png";
+import internshiptwo from "./internship2.png";
+
 export {
   logo,
   backend,
@@ -59,4 +63,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  tcsIon,
+  internshiptwo,
+  internshipone,
 };

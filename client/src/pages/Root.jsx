@@ -2,7 +2,6 @@ import Navbar from "../components/Header/Navbar.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import About from "../components/About/About.jsx";
 import Experience from "../components/Experience/Experience.jsx";
-import Tech from "../components/Tech/Tech.jsx";
 import Works from "../components/Works/Works.jsx";
 import Feedbacks from "../components/FeedBacks/Feedbacks.jsx";
 import Contact from "../components/Contact/Contact.jsx";
@@ -21,7 +20,6 @@ const Root = () => {
       <About />
       <Skills />
       <Experience />
-      <Tech />
       <Works />
       <Feedbacks />
       <div className={styles["sub-container-two"]}>

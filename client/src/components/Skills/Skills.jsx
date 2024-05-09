@@ -20,6 +20,7 @@ const Skills = () => {
           variants={textVariant()}
           className={styles["about-heading"]}
         >
+          <p className={styles["intro-text"]}>WHAT I HAVE LEARNED SO FAR</p>
           <h2 className={styles["skills-h2"]}>Skills.</h2>
         </motion.div>
         <motion.p

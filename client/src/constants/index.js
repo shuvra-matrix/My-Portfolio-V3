@@ -1,50 +1,11 @@
 import {
-  backend,
   carrent,
-  creator,
+  internshipone,
+  internshiptwo,
   jobit,
-  meta,
-  mobile,
-  shopify,
-  starbucks,
-  tesla,
+  tcsIon,
   tripguide,
-  web,
 } from "../assets";
-
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
 
 export const skills = [
   {
@@ -171,83 +132,32 @@ export const skills = [
 ];
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Developer Intern",
+    company_name: "TCS iON",
+    icon: tcsIon,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Aug 2021 - Oct 2021",
+    certificate: internshipone,
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "In this Internship I developed a Hospitality Industry Management System.",
+      "It covered Housekeeping Daily Activities, Room Service, Customer Complaints, and Monthly Roster.",
+      "Admin manages users, tracks housekeeping tasks, and generates reports.",
+      "Staff access personalized dashboards to handle tasks and update statuses, enhancing efficiency in daily activities, room services, and customer interactions.",
     ],
+    skills: ["PHP", "JavaScript", "MySql", "HTML", "CSS"],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Web Developer Intern",
+    company_name: "TCS iON",
+    icon: tcsIon,
+    date: "Oct 2021 - Dec 2021",
+    certificate: internshiptwo,
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed an Examination Portal utilizing PHP, HTML, CSS, JavaScript, and MySQL.",
+      "This dynamic platform empowers students to take exams seamlessly.",
+      "Administrators enjoy the ability to effortlessly add, edit, and manage students, topics, and questions.",
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    skills: ["Django", "Python", "JavaScript", "SQL Lite", "HTML", "CSS"],
   },
 ];
 
@@ -317,4 +227,4 @@ const projects = [
   },
 ];
 
-export { services, experiences, testimonials, projects };
+export { experiences, projects };

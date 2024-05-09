@@ -1,13 +1,20 @@
 import styles from "./Skills.module.css";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils/motion.js";
+import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
 import React from "react";
 import SkillCard from "../ServiceCard/SkillCard.jsx";
 import { skills } from "../../constants/index.js";
 
 const Skills = () => {
   return (
-    <section className={styles["skills-main"]} id="skills">
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={styles["skills-main"]}
+      id="skills"
+    >
       <div className={styles["skills-sub"]}>
         <motion.div
           variants={textVariant()}
@@ -28,7 +35,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

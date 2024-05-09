@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import githubIcon from "../../assets/github.png";
 import menuSvg from "../../assets/menu.svg";
 import closeSvg from "../../assets/close.svg";
@@ -9,6 +9,7 @@ import closeSvg from "../../assets/close.svg";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     window.onscroll = () => {
       setIsScrolled(window.scrollY !== 0);
@@ -16,12 +17,17 @@ const Navbar = () => {
     };
   }, []);
 
+  const logoDivClickHandler = () => {
+    navigate("/");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className={styles["nav"]}>
       <div
         className={`${styles["nav-container"]} ${isScrolled ? styles["scrolled-nav"] : ""}`}
       >
-        <div className={styles["logo-div"]}>
+        <div className={styles["logo-div"]} onClick={logoDivClickHandler}>
           <div className={styles["logo"]}>
             <img src={Logo} alt="logo" />
           </div>

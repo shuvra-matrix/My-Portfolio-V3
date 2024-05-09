@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils/motion.js";
+import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
 import ServiceCard from "../ServiceCard/ServiceCard.jsx";
 import { backend, creator } from "../../assets/index.js";
 
@@ -12,7 +12,14 @@ const serviceData = [
 
 const About = () => {
   return (
-    <section className={styles["about-main"]} id="about">
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={styles["about-main"]}
+      id="about"
+    >
       <div className={styles["about-sub"]}>
         <motion.div
           variants={textVariant()}
@@ -53,7 +60,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

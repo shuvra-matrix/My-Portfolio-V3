@@ -1,42 +1,31 @@
 import styles from "./Skills.module.css";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
+import { fadeIn } from "../../utils/motion.js";
 import React from "react";
 import SkillCard from "../ServiceCard/SkillCard.jsx";
 import { skills } from "../../constants/index.js";
+import Card from "../UI/Card.jsx";
 
 const Skills = () => {
   return (
-    <motion.section
-      variants={staggerContainer()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={styles["skills-main"]}
-      id="skills"
+    <Card
+      title={"WHAT I HAVE LEARNED SO FAR"}
+      overview={"Skills."}
+      bgColor={"transparent"}
     >
-      <div className={styles["skills-sub"]}>
-        <motion.div
-          variants={textVariant()}
-          className={styles["about-heading"]}
-        >
-          <p className={styles["intro-text"]}>WHAT I HAVE LEARNED SO FAR</p>
-          <h2 className={styles["skills-h2"]}>Skills.</h2>
-        </motion.div>
-        <motion.p
-          className={styles["skills-me-long"]}
-          variants={fadeIn("", "", 0.1, 1)}
-        >
-          Here are some of my skills on which i have been working on for the
-          past 3 years.
-        </motion.p>
-        <div className={styles["skill-card"]}>
-          {skills.map((data, index) => (
-            <SkillCard index={index} skills={data.skills} title={data.title} />
-          ))}
-        </div>
+      <motion.p
+        className={styles["skills-me-long"]}
+        variants={fadeIn("", "", 0.1, 1)}
+      >
+        Here are some of my skills on which i have been working on for the past
+        3 years.
+      </motion.p>
+      <div className={styles["skill-card"]}>
+        {skills.map((data, index) => (
+          <SkillCard index={index} skills={data.skills} title={data.title} />
+        ))}
       </div>
-    </motion.section>
+    </Card>
   );
 };
 

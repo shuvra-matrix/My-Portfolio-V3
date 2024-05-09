@@ -1,25 +1,3 @@
-.skills-main {
-  width: 100%;
-  background-color: transparent;
-  padding-block: 10px;
-}
-.skills-sub {
-  width: 100%;
-  max-width: 1400px;
-  padding-inline: 12px;
-  margin: auto;
-}
-.intro-text {
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 5px;
-  color: #c5c5c5;
-}
-.skills-h2 {
-  font-size: 50px;
-  padding-block: 10px;
-}
-
 .skills-me-long {
   color: #c5c5c5;
   line-height: 25px;

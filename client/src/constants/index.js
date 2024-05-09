@@ -1,11 +1,4 @@
-import {
-  carrent,
-  internshipone,
-  internshiptwo,
-  jobit,
-  tcsIon,
-  tripguide,
-} from "../assets";
+import { carrent, internshipone, internshiptwo, tcsIon } from "../assets";
 
 export const skills = [
   {
@@ -201,7 +194,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: "",
     source_code_link: "https://github.com/",
   },
   {
@@ -222,7 +215,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "",
     source_code_link: "https://github.com/",
   },
 ];

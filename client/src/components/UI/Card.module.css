@@ -1,0 +1,29 @@
+.card-main {
+  width: 100%;
+  padding-block: 10px;
+}
+.card-sub {
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 12px;
+  margin: auto;
+}
+
+.intro-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #c5c5c5;
+}
+
+.card-h2 {
+  font-size: 50px;
+  padding-block: 10px;
+}
+
+@media (max-width: 550px) {
+  .card-h2 {
+    font-size: 45px;
+    padding-block: 10px;
+  }
+}

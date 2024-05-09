@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import ScrollDown from "../ScrollDown/ScrollDown.jsx";
+import ScrollDown from "../UI/ScrollDown.jsx";
 import { ComputersCanvas } from "../canvas/index.js";
 import StyledStarsCanvas from "../canvas/BgStarts.jsx";
 

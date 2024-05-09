@@ -3,7 +3,6 @@ import Hero from "../components/Hero/Hero.jsx";
 import About from "../components/About/About.jsx";
 import Experience from "../components/Experience/Experience.jsx";
 import Works from "../components/Works/Works.jsx";
-import Feedbacks from "../components/FeedBacks/Feedbacks.jsx";
 import Contact from "../components/Contact/Contact.jsx";
 import { StarsCanvas } from "../components/canvas/index.js";
 import styles from "./Root.module.css";
@@ -21,7 +20,6 @@ const Root = () => {
       <Skills />
       <Experience />
       <Works />
-      <Feedbacks />
       <div className={styles["sub-container-two"]}>
         <Contact />
         <StarsCanvas />

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo/logo.svg";
 import { NavLink, useNavigate } from "react-router-dom";
-import githubIcon from "../../assets/github.png";
-import menuSvg from "../../assets/menu.svg";
-import closeSvg from "../../assets/close.svg";
+import githubIcon from "../../assets/logo/github.png";
+import menuSvg from "../../assets/logo/menu.svg";
+import closeSvg from "../../assets/logo/close.svg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

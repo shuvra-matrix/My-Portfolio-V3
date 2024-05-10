@@ -21,3 +21,15 @@
   height: 31px;
   background-color: #1e134f;
 }
+
+@media (max-width: 300px) {
+  .pagination-main {
+    width: 22px;
+    height: 22px;
+  }
+
+  .pagination-selected {
+    width: 28px;
+    height: 28px;
+  }
+}

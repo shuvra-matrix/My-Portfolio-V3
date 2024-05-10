@@ -21,11 +21,15 @@
 .project-nav div {
   width: fit-content;
   padding: 5px 10px;
-  color: #612d90;
+  color: #6a2b9d;
   font-weight: 500;
   cursor: pointer;
   font-size: 14px;
   border: 1px solid rgb(70 44 98 / 78%);
+}
+
+.project-nav div.active-nav {
+  background-color: rgb(27, 5, 66);
 }
 
 .project-nav div:hover {
@@ -54,4 +58,21 @@
   align-items: center;
   gap: 10px;
   margin-top: 30px;
+}
+
+@media (max-width: 930px) {
+  .projects-sub {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .projects-sub {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .pagination {
+    gap: 8px;
+  }
 }

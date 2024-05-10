@@ -1,6 +1,6 @@
 .project-card {
   background-color: #140f2d;
-  width: 250px;
+  width: 280px;
   height: auto;
   padding: 15px 10px;
   border-radius: 14px;
@@ -74,4 +74,11 @@
 .live p {
   color: #bebebe;
   font-size: 12px;
+}
+
+@media (max-width: 300px) {
+  .project-card {
+    width: 260px;
+    gap: 10px;
+  }
 }

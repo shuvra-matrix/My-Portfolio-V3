@@ -197,7 +197,7 @@ const projects = [
         color: "pink",
       },
     ],
-    category: ["other,web"],
+    category: ["other,web", "all"],
     isLive: false,
     liveLink: "https://github.com",
     image: carrent,

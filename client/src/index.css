@@ -14,6 +14,11 @@
 
 html {
   background-color: #090a17;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
 }
 
 .hash-span {

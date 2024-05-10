@@ -16,12 +16,20 @@ const Projects = () => {
     currentPage: 1,
   });
 
+  const [activeNav, setActiveNav] = useState("all");
+  const [projectData, setProjectData] = useState([]);
+
   useEffect(() => {
-    const totalPage = Math.ceil(projects.length / 6);
+    const project = projects.filter((data) => {
+      return data.category.includes(activeNav);
+    });
+    const totalPage = Math.ceil(project.length / 6);
     setPaginationCondition((prev) => {
       return { ...prev, totalPages: totalPage };
     });
-  }, [projects]);
+
+    setProjectData(project);
+  }, [projects, activeNav]);
 
   const paginationHandler = (page) => {
     setPaginationCondition((prev) => {
@@ -32,10 +40,23 @@ const Projects = () => {
         currentPage: page,
       };
     });
+
     const sectionTop = projectRef.current.offsetTop;
     window.scroll({
       top: sectionTop - 120, // Adjusted scroll position
       behavior: "smooth",
+    });
+  };
+
+  const activeNavHandler = (active) => {
+    setActiveNav(active);
+    setPaginationCondition((prev) => {
+      return {
+        ...prev,
+        start: 0,
+        end: 6,
+        currentPage: 1,
+      };
     });
   };
 
@@ -59,18 +80,27 @@ const Projects = () => {
 
       <div className={styles["projects-section"]} ref={projectRef}>
         <div className={styles["project-nav"]}>
-          <div className={styles["first-nav"]}>
+          <div
+            className={`${styles["first-nav"]} ${activeNav === "all" ? styles["active-nav"] : ""}`}
+            onClick={() => activeNavHandler("all")}
+          >
             <p>ALL</p>
           </div>
-          <div className={styles["snd-nav"]}>
+          <div
+            className={`${styles["snd-nav"]} ${activeNav === "web" ? styles["active-nav"] : ""}`}
+            onClick={() => activeNavHandler("web")}
+          >
             <p>WEB APP'S</p>
           </div>
-          <div className={styles["trd-nav"]}>
+          <div
+            className={`${styles["trd-nav"]} ${activeNav === "other" ? styles["active-nav"] : ""}`}
+            onClick={() => activeNavHandler("other")}
+          >
             <p>OTHER'S</p>
           </div>
         </div>
         <div className={styles["projects-sub"]}>
-          {projects
+          {projectData
             .slice(paginationCondition.start, paginationCondition.end)
             .map((data, index) => (
               <ProjectCard

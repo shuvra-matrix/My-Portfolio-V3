@@ -26,7 +26,7 @@
 
 .hero-container-sub-one {
   position: absolute;
-  top: 120px;
+  top: 110px;
 }
 
 .hero-container-sub-one {
@@ -54,7 +54,7 @@
   height: 22rem;
 }
 .about-section {
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
 }
 
@@ -67,13 +67,22 @@
 }
 
 .about-section h3 {
-  font-size: 2.5rem;
-  padding-block: 10px;
+  font-size: 2.4rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 10px;
+  padding-bottom: 10px;
 }
 
 .about-section p {
   font-size: 1.1rem;
   line-height: 2rem;
+  color: #d3d3d3;
+}
+
+.about-section h3 span {
+  color: #e8064b;
 }
 
 @media (max-width: 750px) {
@@ -121,6 +130,13 @@
   .about-section p {
     font-size: 0.9rem;
     line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .about-section h3 {
+    font-size: 1.6rem;
+    padding-block: 10px;
   }
 }
 

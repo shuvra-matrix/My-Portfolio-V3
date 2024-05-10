@@ -3,6 +3,10 @@ import styles from "./Hero.module.css";
 import ScrollDown from "../UI/ScrollDown.jsx";
 import { ComputersCanvas } from "../canvas/index.js";
 import StyledStarsCanvas from "../canvas/BgStarts.jsx";
+import { MyBio } from "../../constants/index.js";
+import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
+import { headContentAnimation } from "../../utils/motion.js";
 
 const Hero = () => {
   return (
@@ -16,15 +20,21 @@ const Hero = () => {
           </div>
           <div className={styles["about-section"]}>
             <h2>
-              Hi, I'm <span>Shuvra</span>
+              Hi, I'm <span>{MyBio.name.slice(0, 6)}</span>
             </h2>
-            <h3>I am a Full Stack Developer</h3>
-            <p>
-              Pursuing B.Tech in Computer Science And Business System from
-              Sister Nivedita University. I am a web Developer .I enjoy creating
-              beautifully designed, intuitive and functional websites. I am also
-              interested in Python Development and Cyber Security
-            </p>
+            <h3>
+              I am a
+              <span>
+                <Typewriter
+                  options={{
+                    strings: MyBio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            </h3>
+            <motion.p {...headContentAnimation}>{MyBio.description}</motion.p>
           </div>
         </div>
       </div>

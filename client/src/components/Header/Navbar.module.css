@@ -108,7 +108,7 @@
 }
 
 .github p {
-  background: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+  background: linear-gradient(316deg, #55259b 0%, #994ecc 74%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -197,5 +197,17 @@
   .close-icon {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
   }
 }

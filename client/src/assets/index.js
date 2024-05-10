@@ -1,4 +1,4 @@
-import logo from "./logo/logo.svg";
+import logo from "./logo/logo.png";
 import backend from "./logo/backend.png";
 import creator from "./logo/creator.png";
 import github from "./logo/github.png";
@@ -28,6 +28,12 @@ import onlineexamination from "./projects/onlineexamination.png";
 import urlshortner from "./projects/urlshortner.png";
 import nodelibrary from "./projects/nodelibrary.png";
 
+import aboutLogo from "./logo/icons8-about-48.png";
+import skillLogo from "./logo/skills.png";
+import experienceLogo from "./logo/experienceLogo.png";
+import projectLogo from "./logo/projectLogo.png";
+import contactLogo from "./logo/contactLogo.png";
+
 export {
   logo,
   backend,
@@ -56,4 +62,9 @@ export {
   onlineexamination,
   urlshortner,
   nodelibrary,
+  aboutLogo,
+  skillLogo,
+  experienceLogo,
+  projectLogo,
+  contactLogo,
 };

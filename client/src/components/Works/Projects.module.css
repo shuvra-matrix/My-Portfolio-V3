@@ -1,0 +1,49 @@
+.explain-p {
+  color: #c5c5c5;
+  line-height: 25px;
+  font-size: 15px;
+}
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.project-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-nav div {
+  width: fit-content;
+  padding: 5px 10px;
+  color: #612d90;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid rgb(70 44 98 / 78%);
+}
+
+.project-nav div:hover {
+  background-color: rgba(58, 34, 101, 0.4);
+}
+
+.first-nav {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.trd-nav {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.projects-sub {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}

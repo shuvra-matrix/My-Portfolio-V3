@@ -173,49 +173,202 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Car Rent other web",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue",
+      },
+      {
+        name: "mongodb",
+        color: "green",
+      },
+      {
+        name: "tailwind",
+        color: "pink",
+      },
+    ],
+    category: ["other,web"],
+    isLive: false,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent other",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    category: ["other"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Car Rent",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    category: ["web"],
+    isLive: true,
+    liveLink: "https://github.com",
+    image: carrent,
     source_code_link: "https://github.com/",
   },
 ];

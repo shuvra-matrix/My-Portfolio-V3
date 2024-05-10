@@ -98,32 +98,33 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {isMenuOpen && (
-        <div className={styles["nav-mobile"]}>
-          <div className={styles["nav-section"]}>
-            <a href={"#about"}>
-              <img src={aboutLogo} alt={"about"} />
-              <p>About</p>
-            </a>
-            <a href={"#skills"}>
-              <img src={skillLogo} alt={"skills"} />
-              <p>Skill</p>
-            </a>
-            <a href={"#exp"}>
-              <img src={experienceLogo} alt={"experience"} />
-              <p>Experience</p>
-            </a>
-            <a href={"#project"}>
-              <img src={projectLogo} alt={"project"} />
-              <p>Projects</p>
-            </a>
-            <a href={"#contact"}>
-              <img src={contactLogo} alt={"contact"} />
-              <p>Contact</p>
-            </a>
-          </div>
+
+      <div
+        className={`${styles["nav-mobile"]} ${isMenuOpen ? styles["nav-mobile-open"] : ""}`}
+      >
+        <div className={styles["nav-section"]}>
+          <a href={"#about"}>
+            <img src={aboutLogo} alt={"about"} />
+            <p>About</p>
+          </a>
+          <a href={"#skills"}>
+            <img src={skillLogo} alt={"skills"} />
+            <p>Skill</p>
+          </a>
+          <a href={"#exp"}>
+            <img src={experienceLogo} alt={"experience"} />
+            <p>Experience</p>
+          </a>
+          <a href={"#project"}>
+            <img src={projectLogo} alt={"project"} />
+            <p>Projects</p>
+          </a>
+          <a href={"#contact"}>
+            <img src={contactLogo} alt={"contact"} />
+            <p>Contact</p>
+          </a>
         </div>
-      )}
+      </div>
     </>
   );
 };

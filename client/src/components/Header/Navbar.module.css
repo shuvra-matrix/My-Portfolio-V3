@@ -14,7 +14,14 @@
 }
 .nav-mobile {
   display: none;
+  position: fixed;
+  transition: 0.3s ease-in;
+  right: -250px;
   box-shadow: 0 0 25px 5px rgba(5, 7, 20, 0.79);
+}
+
+.nav-mobile-open {
+  right: 0;
 }
 
 .nav-container {
@@ -152,8 +159,7 @@
     height: auto;
     background: rgba(8, 10, 26, 0);
     padding: 12px;
-    top: 100px;
-    right: 0;
+    top: 90px;
     z-index: 20;
     backdrop-filter: blur(40px);
     border-top-left-radius: 20px;

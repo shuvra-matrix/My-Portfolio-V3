@@ -1,0 +1,86 @@
+.contact-container {
+  width: 500px;
+  background-color: #0f0d24;
+  padding: 20px;
+  border-radius: 18px;
+  border: 2px solid #0a2b5145;
+  box-shadow: 1px 2px 10px 10px #08045a21;
+}
+
+.contact-container form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.contact-container form div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 10px;
+  padding-block: 10px;
+}
+
+.contact-container label {
+  color: #cecece;
+  font-size: 14px;
+}
+
+.contact-container form div input,
+textarea {
+  background-color: #151030;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  padding-inline: 10px;
+  color: #e1e1e1;
+}
+
+.contact-container form div input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contact-container form div input::placeholder,
+textarea::placeholder {
+  color: #b7b7b7;
+}
+
+.contact-container form div textarea {
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  padding-block: 10px;
+  resize: none;
+}
+
+.contact-container form div textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+.contact-container button {
+  width: 100px;
+  padding: 8px;
+  background-color: #1c1542;
+  border: 1px solid #271a6b;
+  border-radius: 5px;
+  color: #e3e3e3;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-container button img {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-container button:hover {
+  background-color: #17123b;
+  border: 1px solid #2c1a80;
+}

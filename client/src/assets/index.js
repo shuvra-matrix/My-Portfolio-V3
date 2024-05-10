@@ -33,6 +33,7 @@ import skillLogo from "./logo/skills.png";
 import experienceLogo from "./logo/experienceLogo.png";
 import projectLogo from "./logo/projectLogo.png";
 import contactLogo from "./logo/contactLogo.png";
+import sendLogo from "./logo/icons8-send-48.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   experienceLogo,
   projectLogo,
   contactLogo,
+  sendLogo,
 };

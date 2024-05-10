@@ -47,9 +47,9 @@ const Navbar = () => {
           <a href={"#exp"}>
             <p>Experience</p>
           </a>
-          <NavLink to={"#about"}>
+          <a href={"#project"}>
             <p>Projects</p>
-          </NavLink>
+          </a>
           <NavLink to={"#about"}>
             <p>Contact</p>
           </NavLink>

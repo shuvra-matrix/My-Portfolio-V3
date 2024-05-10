@@ -1,0 +1,23 @@
+.pagination-main {
+  background-color: #1c153f;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #d5d5d5;
+  border: 1px solid #50279f;
+  font-size: 13px;
+}
+
+.pagination-main:hover {
+  background-color: #2a1a75;
+}
+
+.pagination-selected {
+  width: 31px;
+  height: 31px;
+  background-color: #1e134f;
+}

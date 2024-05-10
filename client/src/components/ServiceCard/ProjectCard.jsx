@@ -17,7 +17,7 @@ const ProjectCard = ({
       <p className={styles["desc"]}>{desc}</p>
       <div className={styles["skills"]}>
         {tags?.map((data, index) => (
-          <p>#{data.name}</p>
+          <p key={index}>#{data.name}</p>
         ))}
       </div>
       <div className={styles["links"]}>

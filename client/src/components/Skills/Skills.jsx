@@ -23,7 +23,12 @@ const Skills = () => {
       </motion.p>
       <div className={styles["skill-card"]}>
         {skills.map((data, index) => (
-          <SkillCard index={index} skills={data.skills} title={data.title} />
+          <SkillCard
+            key={index}
+            index={index}
+            skills={data.skills}
+            title={data.title}
+          />
         ))}
       </div>
     </Card>

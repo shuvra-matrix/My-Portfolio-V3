@@ -1,12 +1,44 @@
-import React from "react";
+import { useEffect, useRef, useState } from "react";
 import Card from "../UI/Card.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion.js";
 import styles from "./Projects.module.css";
 import { projects } from "../../constants/index.js";
 import ProjectCard from "../ServiceCard/ProjectCard.jsx";
+import Pagination from "../Skills/Pagination.jsx";
 
 const Projects = () => {
+  const projectRef = useRef(null);
+  const [paginationCondition, setPaginationCondition] = useState({
+    start: 0,
+    end: 6,
+    totalPages: 0,
+    currentPage: 1,
+  });
+
+  useEffect(() => {
+    const totalPage = Math.ceil(projects.length / 6);
+    setPaginationCondition((prev) => {
+      return { ...prev, totalPages: totalPage };
+    });
+  }, [projects]);
+
+  const paginationHandler = (page) => {
+    setPaginationCondition((prev) => {
+      return {
+        ...prev,
+        start: 6 * (page - 1),
+        end: 6 * page,
+        currentPage: page,
+      };
+    });
+    const sectionTop = projectRef.current.offsetTop;
+    window.scroll({
+      top: sectionTop - 120, // Adjusted scroll position
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Card
       id={"project"}
@@ -25,7 +57,7 @@ const Projects = () => {
         effectively.
       </motion.p>
 
-      <div className={styles["projects-section"]}>
+      <div className={styles["projects-section"]} ref={projectRef}>
         <div className={styles["project-nav"]}>
           <div className={styles["first-nav"]}>
             <p>ALL</p>
@@ -38,17 +70,34 @@ const Projects = () => {
           </div>
         </div>
         <div className={styles["projects-sub"]}>
-          {projects.map((data, index) => (
-            <ProjectCard
-              name={data.name}
-              desc={data.description}
-              image={data.image}
-              isLive={data.isLive}
-              tags={data.tags}
-              liveLink={data.liveLink}
-              sourceCode={data.source_code_link}
-            />
-          ))}
+          {projects
+            .slice(paginationCondition.start, paginationCondition.end)
+            .map((data, index) => (
+              <ProjectCard
+                key={index}
+                name={data.name}
+                desc={data.description}
+                image={data.image}
+                isLive={data.isLive}
+                tags={data.tags}
+                liveLink={data.liveLink}
+                sourceCode={data.source_code_link}
+              />
+            ))}
+        </div>
+        <div className={styles["pagination"]}>
+          {Array.from({ length: paginationCondition.totalPages }).map(
+            (data, _index) => (
+              <Pagination
+                paginationHandel={paginationHandler}
+                currnetPage={paginationCondition.currentPage}
+                index={_index}
+                key={_index}
+              >
+                {_index + 1}
+              </Pagination>
+            ),
+          )}
         </div>
       </div>
     </Card>

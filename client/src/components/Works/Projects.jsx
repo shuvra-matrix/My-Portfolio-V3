@@ -101,7 +101,7 @@ const Projects = () => {
         </div>
         <div className={styles["projects-sub"]}>
           {projectData
-            .slice(paginationCondition.start, paginationCondition.end)
+            ?.slice(paginationCondition.start, paginationCondition.end)
             .map((data, index) => (
               <ProjectCard
                 key={index}
@@ -112,6 +112,7 @@ const Projects = () => {
                 tags={data.tags}
                 liveLink={data.liveLink}
                 sourceCode={data.source_code_link}
+                index={index + 1}
               />
             ))}
         </div>

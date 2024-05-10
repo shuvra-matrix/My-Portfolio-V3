@@ -10,6 +10,14 @@ const ProjectCard = ({
   image,
   sourceCode,
 }) => {
+  const githubLinkHandler = () => {
+    window.open(sourceCode, "_blank");
+  };
+
+  const liveLinkHandler = () => {
+    window.open(liveLink, "_blank");
+  };
+
   return (
     <div className={styles["project-card"]}>
       <img src={image} alt={"project image"} />
@@ -17,13 +25,15 @@ const ProjectCard = ({
       <p className={styles["desc"]}>{desc}</p>
       <div className={styles["skills"]}>
         {tags?.map((data, index) => (
-          <p key={index}>#{data.name}</p>
+          <p style={{ color: data.color }} key={index}>
+            #{data.name}
+          </p>
         ))}
       </div>
       <div className={styles["links"]}>
-        <img src={github} alt={"github"} />
+        <img onClick={githubLinkHandler} src={github} alt={"github"} />
         {isLive && (
-          <div className={styles["live"]}>
+          <div onClick={liveLinkHandler} className={styles["live"]}>
             <p>Live Link</p>
           </div>
         )}

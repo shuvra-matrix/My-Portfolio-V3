@@ -1,4 +1,22 @@
-import { carrent, internshipone, internshiptwo, tcsIon } from "../assets";
+import {
+  chatsonic,
+  codecarbon,
+  dalle2,
+  djangolms,
+  gemini,
+  heartdesease,
+  housekeeping,
+  internshipone,
+  internshiptwo,
+  mernBlog,
+  nodelibrary,
+  onlineexamination,
+  phpblog,
+  phpecommers,
+  socialvideov2,
+  summerize,
+  tcsIon,
+} from "../assets";
 
 export const skills = [
   {
@@ -156,1084 +174,348 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Gemini AI Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Gemini AI is an innovative web application that brings an interactive chat experience with the help of Google Gemini Pro api. Built using Node.js, React.js, MongoDB, and Redux Toolkit, this app allows users to engage in text-based conversations with Gemini AI. The application features Google OAuth V2 for user authentication, enabling enhanced capabilities and personalization.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "#00cdc5",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "#449f44",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "node",
+        color: "#7bd77b",
+      },
+      {
+        name: "redux",
+        color: "#d32c97",
       },
     ],
-    category: ["web"],
+    category: ["web", "all"],
     isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://geminichatai.netlify.app/",
+    image: gemini,
+    source_code_link: "https://github.com/shuvra-matrix/Gemini-Ai--MERN",
   },
   {
-    name: "Car Rent other web",
+    name: "BlogSpot CMS Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "BlogSpot is a web application built using React.js for the frontend, Node.js for the backend, and MongoDB as the database. It allows users to read blogs posted by other writers and create and publish their own blogs. The project utilizes the TinyMCE text editor to enhance the blog writing experience.",
     tags: [
       {
         name: "react",
-        color: "blue",
+        color: "#00cdc5",
       },
       {
         name: "mongodb",
-        color: "green",
+        color: "#449f44",
       },
       {
-        name: "tailwind",
-        color: "pink",
+        name: "node",
+        color: "#7bd77b",
       },
     ],
-    category: ["other,web", "all"],
+    category: ["web", "all"],
+    isLive: true,
+    liveLink: "https://publicblogspot.netlify.app/",
+    image: mernBlog,
+    source_code_link:
+      "https://github.com/shuvra-matrix/MERN-CMS-PROJECT?tab=readme-ov-file",
+  },
+  {
+    name: "Vidown Web App",
+    description:
+      "Vidown is a powerful web application that enables you to effortlessly download publicly accessible videos from popular social media platforms, including Twitter, YouTube, Facebook, and Instagram. Built with a robust backend in Node.js and a responsive frontend in React.js, Vidown provides a seamless and user-friendly video downloading experience.",
+    tags: [
+      {
+        name: "react",
+        color: "#00cdc5",
+      },
+      {
+        name: "mongodb",
+        color: "#449f44",
+      },
+      {
+        name: "node",
+        color: "#7bd77b",
+      },
+    ],
+    category: ["web", "all"],
+    isLive: true,
+    liveLink: "https://vidown.netlify.app/",
+    image: socialvideov2,
+    source_code_link:
+      "https://github.com/shuvra-matrix/SOCIAL-MEDIA-VIDEO-DOWNLOAD---MERN",
+  },
+  {
+    name: "Chat Sonic Ai Chat App",
+    description:
+      "Chat Sonic is an innovative web application developed using Node.js, OpenAI API, and harnessing the capabilities of Stable Diffusion v2.1 models. This powerful app combines the functionalities of a chatbot, image generation, and Progressive Web App (PWA) support, offering users a seamless and immersive experience.",
+    tags: [
+      {
+        name: "ejs",
+        color: "#cfcc2c",
+      },
+      {
+        name: "mongodb",
+        color: "#449f44",
+      },
+      {
+        name: "node",
+        color: "#7bd77b",
+      },
+    ],
+    category: ["web", "all"],
     isLive: false,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://vidown.netlify.app/",
+    image: chatsonic,
+    source_code_link: "https://github.com/shuvra-matrix/CHAT-SONIC",
   },
   {
-    name: "Car Rent other",
+    name: "DALL-E 2 Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "DALL-E 2 is a cutting-edge web application that harnesses the power of AI to generate images from text descriptions. Inspired by Stable Defusion 2.1, this app allows users to unleash their creativity by converting textual ideas into stunning visual artwork.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "#00cdc5",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "#449f44",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "node",
+        color: "#7bd77b",
       },
     ],
-    category: ["other"],
+    category: ["web", "all"],
     isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://dalle2ai.netlify.app/",
+    image: dalle2,
+    source_code_link: "https://github.com/shuvra-matrix/DALL-E-2-Clone--MERN-",
   },
   {
-    name: "Car Rent",
+    name: "All Url File Size",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "all-url-file-size is a Node.js module that allows you to retrieve the file size of a resource hosted at a given URL without downloading it while specifying the format (mb, kb, or bytes). This can be useful for various purposes, such as checking the size of remote files before deciding whether to download them.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "javascript",
+        color: "#e5e249",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "node",
+        color: "#7bd77b",
       },
     ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent other web",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue",
-      },
-      {
-        name: "mongodb",
-        color: "green",
-      },
-      {
-        name: "tailwind",
-        color: "pink",
-      },
-    ],
-    category: ["other,web"],
+    category: ["other", "all"],
     isLive: false,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://code-carbon.onrender.com/",
+    image: nodelibrary,
+    source_code_link: "https://github.com/shuvra-matrix/all-url-file-size",
   },
   {
-    name: "Car Rent other",
+    name: "Code Carbon",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Code Carbon is a powerful and versatile web app that allows users to easily share their code in image format. With support for all types of programming languages, users can showcase their skills and share their work with friends, colleagues, and the wider programming community with ease.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "ejs",
+        color: "#cfcc2c",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "#449f44",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "node",
+        color: "#7bd77b",
       },
     ],
-    category: ["other"],
+    category: ["web", "all"],
     isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://code-carbon.onrender.com/",
+    image: codecarbon,
+    source_code_link: "https://github.com/shuvra-matrix/CODE-CARBON",
   },
   {
-    name: "Car Rent",
+    name: "Synop Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Synop is a powerful and user-friendly web application that simplifies the process of summarizing articles from URLs. Whether you're a student looking to extract key information from research papers or a busy professional trying to stay informed, Synop has got you covered. ",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "#00cdc5",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "#449f44",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "node",
+        color: "#7bd77b",
       },
     ],
-    category: ["web"],
+    category: ["web", "all"],
     isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://synops.netlify.app/",
+    image: summerize,
+    source_code_link:
+      "https://github.com/shuvra-matrix/summarize-articles--MERN-",
   },
   {
-    name: "Car Rent",
+    name: "Housekeeping Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I developed a Hospitality Industry Management System.It covered Housekeeping Daily Activities, Room Service, Customer Complaints, and Monthly Roster. Admin manages users, tracks housekeeping tasks, and generates reports. Staff access personalized dashboards to handle tasks and update statuses, enhancing efficiency in daily activities, room services, and customer interactions.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "#d9523b",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql lite",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "django",
+        color: "#1aab2d",
       },
     ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent other web",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue",
-      },
-      {
-        name: "mongodb",
-        color: "green",
-      },
-      {
-        name: "tailwind",
-        color: "pink",
-      },
-    ],
-    category: ["other,web"],
+    category: ["web", "all"],
     isLive: false,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://synops.netlify.app/",
+    image: housekeeping,
+    source_code_link:
+      "https://github.com/shuvra-matrix/-Housekeeping-Management-System-in-the-Hospitality-Industry",
   },
   {
-    name: "Car Rent other",
+    name: "E Commerce Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Embark on a seamless online shopping journey with our E-Commerce Website Development project, meticulously crafted using PHP and SQL. This dynamic platform presents two distinctive sections: one tailored for users and another for administrators, ensuring a holistic and efficient experience for all stakeholders.",
+
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "php",
+        color: "#d743bd",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "#e5e249",
       },
     ],
-    category: ["other"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent other web",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue",
-      },
-      {
-        name: "mongodb",
-        color: "green",
-      },
-      {
-        name: "tailwind",
-        color: "pink",
-      },
-    ],
-    category: ["other,web"],
+    category: ["web", "all"],
     isLive: false,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://synops.netlify.app/",
+    image: phpecommers,
+    source_code_link:
+      "https://github.com/shuvra-matrix/E-Commerce-Website-Using-PHP?tab=readme-ov-file",
   },
   {
-    name: "Car Rent other",
+    name: "Heart Disease Prediction",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This project focuses on predicting heart disease probabilities through computerized models and developing a web application to aid medical professionals and patients. The research explores various machine learning algorithms applied to a dataset, emphasizing dataset analysis and model development. The paper also identifies key contributing characteristics, providing insights for cost-effective patient trials by focusing on relevant features.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "#d9523b",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql lite",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "django",
+        color: "#1aab2d",
       },
     ],
-    category: ["other"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent other web",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue",
-      },
-      {
-        name: "mongodb",
-        color: "green",
-      },
-      {
-        name: "tailwind",
-        color: "pink",
-      },
-    ],
-    category: ["other,web"],
+    category: ["other", "all", "web"],
     isLive: false,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://synops.netlify.app/",
+    image: heartdesease,
+    source_code_link:
+      "https://github.com/shuvra-matrix/HEART_DISEASE_PREDICTION",
   },
   {
-    name: "Car Rent other",
+    name: "Mon Blog CMS App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Mon Blog a dynamic and user-friendly blogging platform that empowers users to explore a diverse range of content and express their thoughts through personalized blog posts. Whether you're a passionate writer, an avid reader, or someone looking to share your unique perspectives with the world, Mon Blog has you covered.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "php",
+        color: "#d743bd",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "#e5e249",
       },
     ],
-    category: ["other"],
+    category: ["all", "web"],
     isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    liveLink: "https://shuvra.epizy.com/",
+    image: phpblog,
+    source_code_link: "https://github.com/shuvra-matrix/PHP-CMS",
   },
   {
-    name: "Car Rent",
+    name: "School Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I have developed a School Management System and Learning Management System (LMS) using Django. The administrator has the capability to add, modify, and manage teachers, students, classes, and departments. Teachers are empowered to create classes, assign assignments, and upload class notes. Students, on the other hand, can view their assignments, submit them, and track their academic progress.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "#d9523b",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql lite",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "django",
+        color: "#1aab2d",
       },
     ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    category: ["all", "web"],
+    isLive: false,
+    liveLink: "https://synops.netlify.app/",
+    image: djangolms,
+    source_code_link: "https://github.com/shuvra-matrix/LMS-Using-Django",
   },
   {
-    name: "Car Rent",
+    name: "Online Examination Portal",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      " I developed an Examination Portal utilizing PHP, HTML, CSS, JavaScript, and MySQL. This dynamic platform empowers students to take exams seamlessly, while administrators enjoy the ability to effortlessly add, edit, and manage students, topics, and questions.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "php",
+        color: "#d743bd",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "sql",
+        color: "#e18f24",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "#e5e249",
       },
     ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    category: ["web"],
-    isLive: true,
-    liveLink: "https://github.com",
-    image: carrent,
-    source_code_link: "https://github.com/",
+    category: ["all", "web"],
+    isLive: false,
+    liveLink: "https://synops.netlify.app/",
+    image: onlineexamination,
+    source_code_link:
+      "https://github.com/shuvra-matrix/Online-Examination-Portal",
   },
 ];
 

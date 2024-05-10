@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import Card from "../UI/Card.jsx";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <Card id={"contact"} title={"GET IN TOUCH"} overview={"Contact."}></Card>
+  );
+};
 
-export default Contact
+export default Contact;

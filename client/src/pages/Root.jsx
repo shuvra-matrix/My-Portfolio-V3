@@ -4,7 +4,6 @@ import About from "../components/About/About.jsx";
 import Experience from "../components/Experience/Experience.jsx";
 import Projects from "../components/Works/Projects.jsx";
 import Contact from "../components/Contact/Contact.jsx";
-import { StarsCanvas } from "../components/canvas/index.js";
 import styles from "./Root.module.css";
 import React from "react";
 import Skills from "../components/Skills/Skills.jsx";
@@ -22,7 +21,6 @@ const Root = () => {
       <Projects />
       <div className={styles["sub-container-two"]}>
         <Contact />
-        <StarsCanvas />
       </div>
     </div>
   );

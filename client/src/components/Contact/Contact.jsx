@@ -8,15 +8,22 @@ import { motion } from "framer-motion";
 import { slideIn } from "../../utils/motion.js";
 import { SmallLoader } from "../Loader/Loader.jsx";
 import Message from "../UI/Message..jsx";
+import emailjs from "@emailjs/browser";
+import { MyBio } from "../../constants/index.js";
 
 const Contact = () => {
   const [isLoader, setIsLoader] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isError, setIsError] = useState(true);
+  const [isError, setIsError] = useState(false);
   const [isInputError, setIsInputError] = useState({
     nameError: false,
     emailError: false,
     messageError: false,
+  });
+  const [inputData, setInputData] = useState({
+    name: "",
+    email: "",
+    message: "",
   });
 
   const fromSubmitHandler = (e) => {
@@ -39,15 +46,52 @@ const Contact = () => {
       };
     });
 
-    // if(isNameValid && isEmailValid && isMessageValid) {
-    //
-    //
-    //
-    //
-    // }
+    if (isNameValid && isEmailValid && isMessageValid) {
+      const templateId = import.meta.env.VITE_TEMPLATE_ID;
+      const serviceId = import.meta.env.VITE_SERVICE_ID;
+      const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+      setIsLoader(true);
+      emailjs
+        .send(
+          serviceId,
+          templateId,
+          {
+            from_name: name,
+            to_name: MyBio.name,
+            from_email: email,
+            to_email: MyBio.email,
+            message: message,
+          },
+          publicKey,
+        )
+        .then((response) => {
+          setIsSuccess(true);
+        })
+        .catch((err) => {
+          setIsError(true);
+        })
+        .finally(() => {
+          setIsLoader(false);
+          setInputData((pre) => {
+            return {
+              ...pre,
+              name: "",
+              email: "",
+              message: "",
+            };
+          });
+        });
+    }
   };
 
-  const errrorHandler = (e) => {
+  const inputHandler = (e) => {
+    const { name, email, message } = e.target.name;
+
+    setInputData((pre) => {
+      return { ...pre, name: name, email: email, message: message };
+    });
+
     if (e.target.name === "name") {
       setIsInputError((pre) => {
         return { ...pre, nameError: false };
@@ -74,7 +118,15 @@ const Contact = () => {
     return () => {
       clearTimeout(messageHideHandler);
     };
-  }, []);
+  }, [isSuccess, isError]);
+
+  const messageCloseHandler = () => {
+    setIsSuccess(false);
+  };
+
+  const errorCloseHandler = () => {
+    setIsError(false);
+  };
 
   return (
     <Card id={"contact"} title={"GET IN TOUCH"} overview={"Contact."}>
@@ -90,7 +142,7 @@ const Contact = () => {
                 Your Name
               </label>
               <input
-                onChange={errrorHandler}
+                onChange={inputHandler}
                 className={
                   isInputError.nameError ? styles["invalid-input"] : " "
                 }
@@ -98,6 +150,7 @@ const Contact = () => {
                 type={"text"}
                 name={"name"}
                 placeholder={"What's your name?"}
+                value={inputData.name}
               />
             </div>
             <div>
@@ -105,7 +158,7 @@ const Contact = () => {
                 Your Email
               </label>
               <input
-                onChange={errrorHandler}
+                onChange={inputHandler}
                 className={
                   isInputError.emailError ? styles["invalid-input"] : " "
                 }
@@ -113,6 +166,7 @@ const Contact = () => {
                 type={"email"}
                 name={"email"}
                 placeholder={"What's your email?"}
+                value={inputData.email}
               />
             </div>
             <div>
@@ -120,14 +174,17 @@ const Contact = () => {
                 Your Message
               </label>
               <textarea
-                onChange={errrorHandler}
+                onChange={inputHandler}
                 className={
                   isInputError.messageError ? styles["invalid-input"] : " "
                 }
                 id={"message"}
                 name={"message"}
                 placeholder={"What's your message"}
-              ></textarea>
+                value={inputData.message}
+              >
+                {inputData.message}
+              </textarea>
             </div>
             {!isLoader && (
               <button type="submit">
@@ -145,8 +202,14 @@ const Contact = () => {
           <SpaceCanvas />
         </div>
       </div>
-      {isSuccess && <Message />}
-      {isError && <Message type={"error"} message={"Error Send Message"} />}
+      {isSuccess && <Message closeHandler={messageCloseHandler} />}
+      {isError && (
+        <Message
+          closeHandler={errorCloseHandler}
+          type={"error"}
+          message={"Error Send Message!"}
+        />
+      )}
     </Card>
   );
 };

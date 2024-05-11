@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import githubIcon from "../../assets/logo/github.png";
 import menuSvg from "../../assets/logo/menu.svg";
 import closeSvg from "../../assets/logo/close.svg";
+import { MyBio } from "../../constants/index.js";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
   };
 
   const githubIconClickHandler = () => {
-    window.open("https://github.com/shuvra-matrix", "_blank");
+    window.open(MyBio.github, "_blank");
   };
 
   const menuClickHandler = () => {
@@ -47,7 +48,9 @@ const Navbar = () => {
             <div className={styles["logo"]}>
               <img src={logo} alt="logo" />
             </div>
-            <h4 className={styles["name"]}>Shuvra | Portfolio</h4>
+            <h4 className={styles["name"]}>
+              {MyBio.name.slice(0, 6)} | Portfolio
+            </h4>
           </div>
           <div className={styles["about-section"]}>
             <a href={"#about"}>

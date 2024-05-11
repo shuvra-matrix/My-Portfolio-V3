@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { CanvasLoader } from "../Loader/Loader.jsx";
 
 const Computers = ({ isMobile, isTablet }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -24,7 +25,7 @@ const Computers = ({ isMobile, isTablet }) => {
           isTablet
             ? [1, -3.2, -2.1]
             : isMobile
-              ? [1.6, -3, -1.18]
+              ? [1.6, -3.2, -1.18]
               : [0, -3.4, -1.5]
         }
         rotation={isMobile ? [-0.01, -0.2, -0.1] : [-0.01, -0.2, -0.1]}
@@ -75,14 +76,16 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
 
-      <Computers isMobile={isMobile} isTablet={isTablet} />
-      <Preload all />
+        <Computers isMobile={isMobile} isTablet={isTablet} />
+        <Preload all />
+      </Suspense>
     </Canvas>
   );
 };

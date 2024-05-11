@@ -5,8 +5,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*-webkit-user-select: none;*/
-  /*user-select: none;*/
 }
 
 .hero-container img {
@@ -56,6 +54,7 @@
 .about-section {
   max-width: 800px;
   width: 100%;
+  z-index: 15;
 }
 
 .about-section h2 {
@@ -109,6 +108,39 @@
   }
 }
 
+.resume-div {
+  position: relative;
+  z-index: 20;
+  height: 50px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 15px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background: #6000c4;
+  background: -webkit-linear-gradient(to right, #b522cb, #7400ea);
+  background: linear-gradient(to right, #aa23bd, #7600ec);
+}
+
+.resume-div:hover {
+  background: #4d009f;
+  background: -webkit-linear-gradient(to right, #a01ab7, #5b00b9);
+  background: linear-gradient(to right, #a612b4, #5d00b6);
+}
+
+.resume-div p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.resume-div p:hover {
+  color: #c2c2c2;
+}
+
 @media (max-width: 550px) {
   .hero-container-sub-one {
     position: absolute;
@@ -131,6 +163,13 @@
     font-size: 0.9rem;
     line-height: 1.6rem;
   }
+
+  .resume-div {
+    height: 45px;
+  }
+  .resume-div p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -141,17 +180,28 @@
 }
 
 @media (max-width: 380px) {
+  .hero-container-sub-one {
+    top: 70px;
+  }
+
   .about-section h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   .about-section h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-block: 10px;
   }
 
   .about-section p {
     font-size: 0.8rem;
     line-height: 1.5rem;
+  }
+
+  .resume-div {
+    height: 40px;
+  }
+  .resume-div p {
+    font-size: 12px;
   }
 }

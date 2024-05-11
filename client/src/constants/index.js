@@ -22,7 +22,7 @@ const MyBio = {
   name: "Shuvra Chakrabarty",
   roles: ["Full Stack Developer", "Backend Developer", "Frontend Developer"],
   description:
-    "I hold a B.Tech degree in Computer Science and Business Systems and have cultivated my expertise as a self-taught Full Stack Developer.I love making websites that are not only pretty but also easy to use and work well. I enjoy blending design with practicality to create sites that people love to explore.",
+    "I hold a B.Tech degree in Computer Science and Business Systems and have cultivated my expertise as a self-taught Full Stack Developer.I love making websites that are not only pretty but also easy to use and work well.",
   resume:
     "https://drive.google.com/file/d/1BQuH1ihw4qmg6vNLgTAjddtpOUao7d-V/view?usp=sharing",
   linkdin: "https://www.linkedin.com/in/shuvra-chakrabarty-88a373217",

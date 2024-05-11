@@ -9,6 +9,10 @@ import { motion } from "framer-motion";
 import { headContentAnimation } from "../../utils/motion.js";
 
 const Hero = () => {
+  const resumeClickHandler = () => {
+    window.open(MyBio.resume, "_blank");
+  };
+
   return (
     <section className={styles["hero-container"]}>
       <StyledStarsCanvas />
@@ -23,7 +27,7 @@ const Hero = () => {
               Hi, I'm <span>{MyBio.name.slice(0, 6)}</span>
             </h2>
             <h3>
-              I am a
+              I'm a
               <span>
                 <Typewriter
                   options={{
@@ -35,6 +39,14 @@ const Hero = () => {
               </span>
             </h3>
             <motion.p {...headContentAnimation}>{MyBio.description}</motion.p>
+
+            <motion.div
+              onClick={resumeClickHandler}
+              {...headContentAnimation}
+              className={styles["resume-div"]}
+            >
+              <p>Check Resume</p>
+            </motion.div>
           </div>
         </div>
       </div>

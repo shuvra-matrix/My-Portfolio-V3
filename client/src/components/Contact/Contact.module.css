@@ -48,6 +48,11 @@ textarea {
   color: #e1e1e1;
 }
 
+.contact-container form div .invalid-input {
+  background-color: rgba(236, 29, 84, 0.37);
+  border: 1px solid rgba(192, 12, 63, 0.53);
+}
+
 .contact-container form div input:focus,
 textarea:focus {
   outline: none;

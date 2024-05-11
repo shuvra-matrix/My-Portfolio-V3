@@ -7,6 +7,7 @@ import Contact from "../components/Contact/Contact.jsx";
 import styles from "./Root.module.css";
 import React from "react";
 import Skills from "../components/Skills/Skills.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 const Root = () => {
   return (
@@ -22,6 +23,7 @@ const Root = () => {
       <div className={styles["sub-container-two"]}>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 };

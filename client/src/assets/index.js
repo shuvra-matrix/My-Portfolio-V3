@@ -34,6 +34,7 @@ import experienceLogo from "./logo/experienceLogo.png";
 import projectLogo from "./logo/projectLogo.png";
 import contactLogo from "./logo/contactLogo.png";
 import sendLogo from "./logo/icons8-send-48.png";
+import linkdinLogo from "./logo/icons8-linkedin-48.png";
 
 export {
   logo,
@@ -69,4 +70,5 @@ export {
   projectLogo,
   contactLogo,
   sendLogo,
+  linkdinLogo,
 };

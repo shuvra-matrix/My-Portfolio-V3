@@ -1,0 +1,17 @@
+.error-message {
+  position: relative;
+  top: 120px;
+  max-width: 1400px;
+  width: 100%;
+  padding-inline: 12px;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+}
+.error-message h4 {
+  color: #dedada;
+}
+
+.error-message span {
+  color: #e78484;
+}

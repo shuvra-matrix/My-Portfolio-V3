@@ -1,6 +1,7 @@
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
+import { CanvasLoader } from "../Loader/Loader.jsx";
 
 const SpaceCraft = ({ isMobile, isTablet }) => {
   const spaceCraft = useGLTF("./verta_speeder_one/scene.gltf");
@@ -74,17 +75,19 @@ const SpaceCanvas = () => {
         position: "relative",
       }}
     >
-      <OrbitControls
-        enableZoom={false}
-        enableRotate={true}
-        maxPolarAngle={1.3}
-        minPolarAngle={1.3}
-        autoRotate={true}
-        autoRotateSpeed={2.0}
-        rotateSpeed={2.0}
-      />
-      <SpaceCraft isMobile={isMobile} isTablet={isTablet} />
-      <Preload all />
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          enableRotate={true}
+          maxPolarAngle={1.3}
+          minPolarAngle={1.3}
+          autoRotate={true}
+          autoRotateSpeed={2.0}
+          rotateSpeed={2.0}
+        />
+        <SpaceCraft isMobile={isMobile} isTablet={isTablet} />
+        <Preload all />
+      </Suspense>
     </Canvas>
   );
 };

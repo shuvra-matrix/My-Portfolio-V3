@@ -133,6 +133,13 @@ textarea::placeholder {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 550px) {
+  .canvas-div {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   .contact-container {
     width: 95%;

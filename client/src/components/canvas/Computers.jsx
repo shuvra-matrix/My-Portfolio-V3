@@ -4,20 +4,12 @@ import { Canvas } from "@react-three/fiber";
 import { CanvasLoader } from "../Loader/Loader.jsx";
 
 const Computers = ({ isMobile, isTablet }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene-opt.glb");
 
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
       <pointLight intensity={2} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.2}
-        penumbra={2}
-        intensity={2}
-        castShadow
-        shadow-mapSize={1024}
-      />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.75}
@@ -82,8 +74,40 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
+        <spotLight
+          position={[-20, -20, 60]}
+          angle={0.2}
+          penumbra={2}
+          decay={0}
+          intensity={2}
+          shadow-mapSize={500}
+        />
+        <spotLight
+          position={[0, 0, 50]}
+          angle={0.2}
+          penumbra={2}
+          decay={0}
+          intensity={1}
+          shadow-mapSize={500}
+        />
 
         <Computers isMobile={isMobile} isTablet={isTablet} />
+        <spotLight
+          position={[0, -45, 0]}
+          angle={0.5}
+          penumbra={2}
+          decay={0}
+          intensity={1}
+          shadow-mapSize={500}
+        />
+        <spotLight
+          position={[30, 50, 2]}
+          angle={0.5}
+          penumbra={2}
+          decay={0}
+          intensity={1}
+          shadow-mapSize={1200}
+        />
         <Preload all />
       </Suspense>
     </Canvas>

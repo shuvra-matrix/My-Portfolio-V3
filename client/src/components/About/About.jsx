@@ -28,11 +28,7 @@ const About = () => {
         grow as a developer and a team player. I value user satisfaction,
         quality, and innovation in my work. My goal is to leverage my skills and
         knowledge to create impactful and user-friendly digital solutions for
-        various domains and industries. I am always eager to take on new
-        challenges and opportunities to grow as a developer and a team player. I
-        value user satisfaction, quality, and innovation in my work. My goal is
-        to leverage my skills and knowledge to create impactful and
-        user-friendly digital solutions for various domains and industries.
+        various domains and industries.
       </motion.p>
       <div className={styles["service-card"]}>
         {serviceData.map((data, index) => (

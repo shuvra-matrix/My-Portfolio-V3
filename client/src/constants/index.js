@@ -24,7 +24,7 @@ const MyBio = {
   description:
     "I hold a B.Tech degree in Computer Science and Business Systems and have cultivated my expertise as a self-taught Full Stack Developer.I love making websites that are not only pretty but also easy to use and work well.",
   resume:
-    "https://drive.google.com/file/d/1BQuH1ihw4qmg6vNLgTAjddtpOUao7d-V/view?usp=sharing",
+    "https://drive.google.com/file/d/1xvFnag1rTS0dwPo0G0FCFEc9BDxNOD7x/view?usp=sharing",
   linkdin: "https://www.linkedin.com/in/shuvra-chakrabarty-88a373217",
   github: "https://github.com/shuvra-matrix",
   email: "shuvrachakrabarty97@gmail.com",

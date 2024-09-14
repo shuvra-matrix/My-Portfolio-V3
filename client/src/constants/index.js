@@ -1,5 +1,6 @@
 import {
   chatsonic,
+  cloudifyapps,
   codecarbon,
   dalle2,
   djangolms,
@@ -181,6 +182,25 @@ const experiences = [
       "Administrators enjoy the ability to effortlessly add, edit, and manage students, topics, and questions.",
     ],
     skills: ["Django", "Python", "JavaScript", "SQL Lite", "HTML", "CSS"],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Cloudifyapps",
+    icon: cloudifyapps,
+    date: "Jun 2024 - Present",
+    certificate: "",
+    points: [
+      "As a Frontend Developer at Cloudifyapps, I worked on a range of dynamic and innovative projects. My primary focus was building user-friendly and responsive interfaces using React. I collaborated closely with backend teams to ensure smooth integration between the frontend and backend, where I used FastAPI and PostgreSQL for creating and managing API services and databases",
+      "I also contributed to full-stack development projects, gaining experience in backend architecture, API design, and database management, while always ensuring that the frontend remains performant and intuitive.",
+    ],
+    skills: [
+      "React Js",
+      "Fast Api",
+      "Node Js",
+      "Docker",
+      "Mongodb",
+      "PostgreSQL",
+    ],
   },
 ];
 

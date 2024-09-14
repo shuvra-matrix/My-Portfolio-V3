@@ -59,9 +59,11 @@ const ExpCard = ({
             </ul>
           </div>
         </div>
-        <a target="_blank" href={certiImg} className={styles["certiimage"]}>
-          <img src={certiImg} alt="certiimage" />
-        </a>
+        {certiImg?.length > 0 && (
+          <a target="_blank" href={certiImg} className={styles["certiimage"]}>
+            <img src={certiImg} alt="certiimage" />
+          </a>
+        )}
       </div>
     </VerticalTimelineElement>
   );

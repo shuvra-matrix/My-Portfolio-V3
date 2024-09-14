@@ -8,6 +8,7 @@ import close from "./logo/close.svg";
 import tcsIon from "./company/tcsion.png";
 import internshipone from "./certificate/internship1.png";
 import internshiptwo from "./certificate/internship2.png";
+import cloudifyapps from "./company/cloudifyapps_logo.jpeg";
 
 import gemini from "./projects/gemini.png";
 import mernBlog from "./projects/blog.png";
@@ -71,4 +72,5 @@ export {
   contactLogo,
   sendLogo,
   linkdinLogo,
+  cloudifyapps,
 };

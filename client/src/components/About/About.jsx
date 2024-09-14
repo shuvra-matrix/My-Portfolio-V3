@@ -18,17 +18,19 @@ const About = () => {
         className={styles["about-me-long"]}
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I hold a degree in Computer Science and Business Systems at Sister
-        Nivedita University. I have a passion for software development, Web
-        development and a keen interest in learning new technologies and
+        I hold a degree in Computer Science and Business Systems from Sister
+        Nivedita University. I have a passion for software development, web
+        development, and a keen interest in learning new technologies and
         frameworks. As a Web Developer Intern at TCS iON, I completed two
-        projects that demonstrated my skills in Web Development. I also gained
-        experience in working with Mern Stack, Python, REST APIs, Redux, Git and
-        Docker. I am always eager to take on new challenges and opportunities to
-        grow as a developer and a team player. I value user satisfaction,
-        quality, and innovation in my work. My goal is to leverage my skills and
-        knowledge to create impactful and user-friendly digital solutions for
-        various domains and industries.
+        projects that demonstrated my skills in web development. I also gained
+        experience working with the MERN Stack, Python, REST APIs, Redux, Git,
+        and Docker. Currently, I work at Cloudifyapps as a Frontend Developer,
+        where I focus on building responsive and user-friendly interfaces using
+        React. I value user satisfaction, quality, and innovation in my work,
+        and I am always eager to take on new challenges and opportunities to
+        grow as both a developer and a team player. My goal is to leverage my
+        skills and knowledge to create impactful, user-friendly digital
+        solutions for various industries.
       </motion.p>
       <div className={styles["service-card"]}>
         {serviceData.map((data, index) => (
